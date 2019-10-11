@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout</title>
+    <style>
+    /* CSS Document */
+    .contenedor {
+        width: 960px;
+        margin: auto;
+    }
+    #encabezado {
+        background-color: aquamarine;
+        height: 100px;
+    }
+    #navbar {
+        background-color: burlywood;
+        height: 40px;
+    }
+    #principal {
+        background-color: darkorange;
+        min-height: 400px;
+        width: 800px;
+        float: left;
+    }
+    #publicidad {
+        background-color: deeppink;
+        min-height: 400px;
+        width: 160px;
+        float: left;
+    }
+    #pie {
+        background-color: yellowgreen;
+        height: 200px;
+        clear: both; /* para tomar en cuenta los elementos que flotan anteriormente */
+    }
+    </style>
+</head>
+<body>
+    <!-- ancho 960px, encabezado, navegacion, principal, publicidad, pie -->
+    <div class="contenedor">
+        <header id="encabezado"></header>
+        <nav id="navbar"></nav>
+        <main id="principal"></main>
+        <aside id="publicidad"></aside>
+        <footer id="pie"></footer>
+    </div>
+</body>
+</html>
