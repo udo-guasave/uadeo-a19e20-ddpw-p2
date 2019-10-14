@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Absolute position</title>
+    <style>
+      /* CSS Document */
+      .contenedor {
+        width: 800px;
+        height: 400px;
+        margin: auto;
+        background-color: aquamarine;
+      }
+      #nota-principal {
+        position: relative;
+      }
+      #nota-principal>.titulo {
+        background-color: black;
+        opacity: 0.5;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 1000;
+      }
+      .imagen-nota-principal>img {
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="contenedor">
+        <article id="nota-principal">
+          <div class="imagen-nota-principal">
+            <img src="images/nota-principal.png" alt="Imagen principal">
+          </div>
+          <div class="titulo">
+            <header>
+              <h2><a href="#">Titulo de la nota principal</a></h2>
+            </header>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+        </article>
+      </div>
+  </body>
+</html>
