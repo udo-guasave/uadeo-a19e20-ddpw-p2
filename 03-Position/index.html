@@ -9,23 +9,29 @@
       /* CSS Document */
       .contenedor {
         width: 800px;
-        height: 400px;
         margin: auto;
         background-color: aquamarine;
       }
       #nota-principal {
         position: relative;
+        height: 400px;
       }
       #nota-principal>.titulo {
-        background-color: black;
-        opacity: 0.5;
+        background-color: rgba(0,0,0,0.2);
         bottom: 0;
         position: absolute;
         width: 100%;
-        z-index: 1000;
+        color: white;
       }
       .imagen-nota-principal>img {
-        z-index: 0;
+      }
+      .titulo-enlace {
+        text-decoration: none;
+        color: white;
+        text-shadow: 2px 2px 10px lawngreen;
+      }
+      .titulo-contenedor {
+        padding: 0 20px;
       }
     </style>
   </head>
@@ -36,10 +42,12 @@
             <img src="images/nota-principal.png" alt="Imagen principal">
           </div>
           <div class="titulo">
-            <header>
-              <h2><a href="#">Titulo de la nota principal</a></h2>
-            </header>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <div class="titulo-contenedor">
+              <header>
+                <h2><a href="#" class="titulo-enlace">Titulo de la nota principal</a></h2>
+              </header>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
           </div>
         </article>
       </div>

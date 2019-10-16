@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ejemplo CSS Positioning</title>
+    <style>
+      .contenedor {
+        height: 800px;
+        background-color: chocolate;
+        padding: 10px;
+        position: relative;
+        /* position: absolute;
+        right: 0;
+        bottom: 0; */
+      }
+      .bloque01,
+      .bloque02,
+      .bloque03 {
+        height: 30px;
+      }
+      .bloque01 {
+        background-color: cyan;
+        position: absolute;
+        top: 0;
+        right: 0;
+        /* width: 100%; */
+      }
+      .bloque02 {
+        background-color: hotpink;
+        position: fixed;
+        top: 200px;
+      }
+      .bloque03 {
+        background-color: deepskyblue;
+        position: sticky;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">
+      Contenedor
+      <div class="bloque01">Bloque 01</div>
+      <div class="bloque02">Bloque 02</div>
+      <div class="bloque03">Bloque 03</div>
+    </div>
+  </body>
+</html>
