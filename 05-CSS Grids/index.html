@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Grid Layout</title>
+    <style>
+      .grid-container {
+        width: 960px;
+        margin: auto;
+        background-color: aquamarine;
+        display: grid;
+        grid-template-columns: 160px 1fr 100px;
+        grid-template-rows: 100px 300px 50px;
+      }
+      #encabezado {
+        background-color: brown;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+      #menu {
+        background-color: cornflowerblue;
+      }
+      #principal {
+        background-color: darkorange;
+      }
+      #publicidad {
+        background-color: forestgreen;
+      }
+      #pie {
+        background-color: red;
+        grid-column: span 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header id="encabezado">
+        Encabezado
+      </header>
+      <nav id="menu">
+        Menu
+      </nav>
+      <main id="principal">
+        Principal
+      </main>
+      <aside id="publicidad">
+        Publicidad
+      </aside>
+      <footer id="pie">
+        Pie
+      </footer>
+    </div>
+  </body>
+</html>
