@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Media Queries</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fafafa;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-family: 'Roboto Slab', serif;
+    }
+    .container {
+      width: 935px;
+      margin: auto;
+    }
+    .grid-layout {
+      display: grid;
+      grid-template-columns: 600px 1fr;
+      grid-template-rows: 1fr 50px 100px;
+    }
+    .main-image {
+      grid-row-end: span 3;
+      text-align: center;
+    }
+    .store img {
+      width: 135px;
+      height: 44px;
+    }
+    .store {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="grid-layout">
+      <div class="main-image">
+        <img src="images/main.png" alt="Imagen">
+      </div>
+      <div class="form-login">
+        <h3>Luffy</h3>
+        <form action="#">
+          <div>
+            <input type="text" name="user_name" id="user_name" required placeholder="Nombre de usuario">
+          </div>
+          <div>
+            <input type="password" name="user_password" id="user_password" required placeholder="Contraseña">
+          </div>
+          <div>
+            <button type="submit">Iniciar sesión</button>
+          </div>
+        </form>
+      </div>
+      <div class="register">
+        <p>
+          ¿No tienes una cuenta?
+          <a href="#">Registrate</a>
+        </p>
+      </div>
+      <div class="download-app">
+        <div class="store">
+          <a href="#">
+            <img src="images/download-appstore.png" alt="App Store">
+          </a>
+        </div>
+        <div class="store">
+          <a href="#">
+            <img src="images/download-playstore.png" alt="Play Store">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
