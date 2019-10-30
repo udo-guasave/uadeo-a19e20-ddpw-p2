@@ -7,16 +7,20 @@
   <title>CSS Media Queries</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
   <style>
-    body {
-      background-color: #fafafa;
+    /* Reset CSS Begin */
+    body,p,h3 {
       margin: 0;
       padding: 0;
       border: 0;
+    }
+    /* Reset CSS End */
+    body {
+      background-color: #fafafa;
       font-family: 'Roboto Slab', serif;
     }
     .container {
       width: 935px;
-      margin: auto;
+      margin: 30px auto 0;
     }
     .grid-layout {
       display: grid;
@@ -34,6 +38,55 @@
     .store {
       display: inline-block;
     }
+    .box {
+      background-color: white;
+      border: 1px solid lightgray;
+      border-radius: 2px;
+      margin-bottom: 10px;
+      padding: 10px;
+      text-align: center;
+    }
+    .form-login>h3 {
+      font-size: 2.4em;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+    .text-level-2, .text-level-3 {
+      color: #999;
+    }
+    .text-level-2 {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .text-level-3 {
+      margin-top: 20px;
+      font-size: 0.8em;
+      font-weight: normal;
+      width: 80%;
+      text-align: center;
+      display: inline-block;
+    }
+    .form-control {
+      border-radius: 2px;
+      border: 1px solid lightgray;
+      font-size: .8em;
+      padding: 10px 5px;
+      width: 80%;
+      margin: 5px 0;
+      background-color: #fafafa;
+      box-sizing: border-box;
+    }
+    button.form-control {
+      background-color: #3897f0;
+      color: white;
+      border-radius: 5px;
+      border: 0;
+      font-weight: bold;
+      font-size: 0.9em;
+      cursor: pointer;
+      margin-top: 10px;
+      padding: 5px !important;
+    }
   </style>
 </head>
 <body>
@@ -42,21 +95,23 @@
       <div class="main-image">
         <img src="images/main.png" alt="Imagen">
       </div>
-      <div class="form-login">
+      <div class="form-login box">
         <h3>Luffy</h3>
+        <p class="text-level-2">Inicia sesión para ver fotos<br>y videos de tus amigos.</p>
         <form action="#">
           <div>
-            <input type="text" name="user_name" id="user_name" required placeholder="Nombre de usuario">
+            <input class="form-control" type="text" name="user_name" id="user_name" required placeholder="Nombre de usuario">
           </div>
           <div>
-            <input type="password" name="user_password" id="user_password" required placeholder="Contraseña">
+            <input class="form-control" type="password" name="user_password" id="user_password" required placeholder="Contraseña">
           </div>
           <div>
-            <button type="submit">Iniciar sesión</button>
+            <button class="form-control" type="submit">Iniciar sesión</button>
           </div>
         </form>
+        <p class="text-level-3">Al iniciar sesión, aceptas nuestras Condiciones, la Política de datos y la Política de cookies.</p>
       </div>
-      <div class="register">
+      <div class="register box">
         <p>
           ¿No tienes una cuenta?
           <a href="#">Registrate</a>
