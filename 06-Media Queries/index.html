@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
   <style>
     /* Reset CSS Begin */
-    body,p,h3 {
+    body,p,h3,h4 {
       margin: 0;
       padding: 0;
       border: 0;
@@ -87,6 +87,20 @@
       margin-top: 10px;
       padding: 5px !important;
     }
+    .download-app {
+      text-align: center;
+    }
+    @media screen and (max-width: 768px) {
+      .grid-layout {
+        grid-template-columns: 1fr;
+      }
+      .main-image {
+        display: none;
+      }
+      .container {
+        width: 80vw;
+      }
+    }
   </style>
 </head>
 <body>
@@ -118,6 +132,7 @@
         </p>
       </div>
       <div class="download-app">
+        <h4>Decarga la app en</h4>
         <div class="store">
           <a href="#">
             <img src="images/download-appstore.png" alt="App Store">
