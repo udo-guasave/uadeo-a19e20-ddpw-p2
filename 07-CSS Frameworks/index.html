@@ -11,14 +11,21 @@
     background-image: url('./images/main.jpg');
     background-size: cover;
   }
+  .fondo-negro-semitransparente {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px;
+    border-radius: 10px;
+  }
   </style>
 </head>
 <body>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
-            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+          <a class="navbar-item" href="#">
+            <h2 class="is-size-4">
+              Libre de Acoso
+            </h2>
           </a>
           <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="mainMenu">
             <span aria-hidden="true"></span>
@@ -28,58 +35,82 @@
       </div>
       <div class="navbar-menu" id="mainMenu">
         <div class="navbar-end">
-          <a class="navbar-item">
+          <a class="navbar-item" href="#que-es">
             ¿Qué es?
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item" href="#como-detectarlo">
             ¿Cómo detectarlo?
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item" href="#como-prevenirlo">
             ¿Cómo prevenirlo?
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item" href="#que-hacer">
             ¿Qué hacer si soy víctima?
           </a>
         </div>
       </div>
     </div>
   </nav>
-  <section class="hero is-bold is-fullheight-with-navbar" id="inicio">
+  <section class="hero is-bold is-fullheight" id="inicio">
     <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
+      <div class="container fondo-negro-semitransparente">
+        <h1 class="title has-text-white is-size-1">
           Acoso Virtual
         </h1>
-        <h2 class="subtitle">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        <h2 class="subtitle has-text-white is-size-4">
+            El acoso cibernético puede llegar a causar depresión y graves niveles de ansiedad en los adolescentes, lo que eventualmente puede llevar a un suicidio. Estadísticas. México es el 1er país en cuanto a ciberbullying, según datos de la Organización para la Cooperación y Desarrollo Económico.
         </h2>
       </div>
     </div>
   </section>
+  <a id="que-es"></a>
   <section class="hero is-info is-bold is-fullheight">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">
-          Acoso Virtual
-        </h1>
-        <h2 class="subtitle">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        </h2>
+        <div class="columns">
+          <div class="column">
+            <img src="images/que-es.png" alt="Que es el ciberacoso">
+          </div>
+          <div class="column">
+            <h2 class="is-size-3">¿Qué es el acoso virtual ó ciberacoso?</h2>
+            <p>El ciberacoso, también denominado acoso virtual, es el uso de redes sociales para acosar a una persona o grupo de personas, mediante ataques personales, divulgación de información confidencial o falsa entre otros medios. Es decir, se considera ciberacoso, o ciber agresión a todo aquello que se realice a través de los dispositivos electrónicos de comunicación con el fin intencionado de dañar o agredir a una persona o a un grupo.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+  <a id="como-detectarlo"></a>
   <section class="hero is-success is-bold is-fullheight">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">
-          Acoso Virtual
-        </h1>
-        <h2 class="subtitle">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        </h2>
+        <div class="columns">
+          <div class="column">
+            <h2 class="is-size-3">
+              ¿Cómo detectarlo?
+            </h2>
+            <ul>
+              <li>
+                <span class="has-text-weight-bold is-size-5">Cambio de hábitos:</span> si el menor pierde las ganas de hacer actividades en las que antes lo pasaba bien, empieza a bajar su rendimiento escolar, pierde el apetito o le cuesta mantener la atención.
+              </li>
+              <li>
+                <span class="has-text-weight-bold is-size-5">Cambios de humor:</span> susceptibilidad, tristeza repentina, agresividad
+              </li>
+              <li>
+                <span class="has-text-weight-bold is-size-5">Cambios en la forma de relacionarse:</span> si se muestra más introvertido, cambia de amigos o deja de hacer planes en grupo.
+              </li>
+              <li>
+                <span class="has-text-weight-bold is-size-5">Cambios en el lenguaje corporal:</span> se mueve más lento, va encorvado, los hombros van echados hacia delante, no mira a los ojos, lleva la cabeza baja, sufre temblores o mareos, se restriega las manoss...
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <img src="images/como-detectarlo.png" alt="Como detectarlo">
+          </div>
+        </div>
       </div>
     </div>
   </section>
+  <a id="como-prevenirlo"></a>
   <section class="hero is-danger is-bold is-fullheight">
     <div class="hero-body">
       <div class="container">
@@ -92,6 +123,7 @@
       </div>
     </div>
   </section>
+  <a id="que-hacer"></a>
   <section class="hero is-warning is-bold is-fullheight">
     <div class="hero-body">
       <div class="container">
